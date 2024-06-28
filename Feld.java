@@ -15,10 +15,11 @@ public class Feld {
         this.row = row;
         this.line = line;
         for (int i = 0; i < 9; i++) this.hint[i] = false;
+        this.zahl = 0;
     }
 
     // Funktionen
-    public void toggleHint(byte zahl) {
+    public void toggleHint(int zahl) {
         this.hint[zahl] = !this.hint[zahl];
     }
 
